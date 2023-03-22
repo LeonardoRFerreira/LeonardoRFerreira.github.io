@@ -41,24 +41,19 @@
     font-weight: bold;
 }
 
-introInfo a:before {
+
+.codelink::after {
     content: "";
-    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #1EB720;
+    transition: width 0.5s;
+  }
+  .codelink:hover {
+    color: #1EB720;
+  }
+  .codelink:hover::after {
     width: 100%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #1EB720;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.introInfo a:hover::before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
+    background: #1EB720;
+  }
