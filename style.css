@@ -1,11 +1,42 @@
 /*reset*/
 * {
     box-sizing: 'border-box';
-    font-size: 12px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     margin: 0 auto;
     padding: 0;
+}
+
+a{
+    color: #1EB720;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul li {
+    list-style-type: none;
+}
+    
+h1{
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: .6px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: .4px;
+}
+
+h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    letter-spacing: .2px;
 }
 
 .container {
@@ -23,10 +54,6 @@
     align-items: flex-end;
 }
 
-.introInfo h1{
-    font-size: 24px;
-    margin-bottom: 5px;
-}
 
 .introInfo p {
     font-size: 14px;
@@ -36,12 +63,12 @@
 
 .introInfo a {
     font-size: 16px;
-    cursor: pointer;
     color: #1EB720;
     font-weight: bold;
+    display: inline-block;
 }
 
-
+/*sublinhado nos links*/
 .codelink::after {
     content: "";
     display: block;
@@ -57,3 +84,22 @@
     width: 100%;
     background: #1EB720;
   }
+
+  .navbar {
+    display: flex;
+    margin: 20px;
+    list-style: none;
+}
+
+/*minhas skills*/
+.flexSkills {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 40px 0;
+}
+
+.flexSkills p{
+    padding: 10px 0;
+}
